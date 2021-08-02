@@ -8,6 +8,7 @@ if(!$name) {
 	Echo 'Candidate Name is mandatory, process will exit...'
 	break
 }
+ git checkout master
  $name = $name -replace " ", "_"
  $branchName = $startDate + '__' + $name
  git checkout -b $branchName
