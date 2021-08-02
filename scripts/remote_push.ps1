@@ -6,7 +6,7 @@ $gitRepo = $(git rev-parse --abbrev-ref HEAD --)[0]
 
 echo 'Moving branch: '  $gitRepo
 
-git push -u private-origin $gitRepo
+git push -u private-origin $gitRepo --force
 git remote rm private-origin
 
 # echo 'Restoring remote to origin...'

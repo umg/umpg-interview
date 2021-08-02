@@ -30,7 +30,7 @@ jobs:
         run: |
           echo ${{github.head_ref}}
           git fetch
-          git remote add private-origin git@github.com:stoicad/umg-interview-private.git
+          git remote add private-origin git@github.com:umg/umpg-interview-private.git
           git remote -v 
           git checkout ${{github.head_ref}}
           git push -u private-origin ${{github.head_ref}}
